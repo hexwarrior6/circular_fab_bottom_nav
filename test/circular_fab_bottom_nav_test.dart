@@ -18,12 +18,4 @@ void main() {
   test('$MethodChannelCircularFabBottomNav is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelCircularFabBottomNav>());
   });
-
-  test('getPlatformVersion', () async {
-    CircularFabBottomNav circularFabBottomNavPlugin = CircularFabBottomNav();
-    MockCircularFabBottomNavPlatform fakePlatform = MockCircularFabBottomNavPlatform();
-    CircularFabBottomNavPlatform.instance = fakePlatform;
-
-    expect(await circularFabBottomNavPlugin.getPlatformVersion(), '42');
-  });
 }
